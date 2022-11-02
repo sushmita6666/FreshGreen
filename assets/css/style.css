@@ -1,0 +1,158 @@
+/* Sample template 
+    Designed by : Sushmita Barai
+    HTML, CSS, Bootstrap
+*/
+
+/* lato font => font-family: 'Lato', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+/* common section start */
+:root{
+    --primary_color:#02341F;
+    --secondary_color: #F5F5F0;
+    --light_primary_C: rgb(119, 192, 162); 
+}
+*{
+    margin: 0px !important;
+    padding: 0px ; 
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h2,h3, h4, h5{
+    color: var(--primary_color);
+}
+/* common section end */
+/* header section start */
+.header-section{
+    background: linear-gradient(rgba(119, 192, 162,0.8),rgba(119, 192, 162,0.6)), url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.header-section h1 i{
+    color: var(--primary_color);
+    text-shadow: none;
+}
+.header-section h1,.header-section h2 {
+    color: var(--secondary_color);
+    text-shadow: 2px 2px 4px var(--primary_color);
+}
+
+/* navbar section start */
+.navbar-section{
+    position: sticky;
+    top:0;
+    left:0;
+    z-index: 1;
+}
+
+.navbar .nav-link:hover,.navbar .nav-link:focus, .dropdown-item {
+    color: var(--light_primary_C);
+}
+/* navbar section end */
+/* header section end */
+/* forest section start */
+#forest-section{
+    background: var(--secondary_color);
+}
+#forest-section .img-part{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+/* forest section end */
+
+/* flower section start */
+.img-part {
+    position: relative;
+    height: 220px;
+}
+.img-part img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+  
+.img-part .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(21, 88, 21,.7);
+}
+  
+.img-part:hover .overlay {
+    opacity: 1;
+}
+  
+.img-part .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+/* flower section end */
+/* seed section start */
+/* seed section end */
+/* about section start */
+#about-section{
+    background: var(--secondary_color);
+}
+#about-section .contact-logo{
+    display: flex;
+    justify-content: center;
+}
+#about-section .contact-logo span{
+    padding: 25px 63px;
+    border-radius: 50%;
+    background: var(--light_primary_C);
+    color: var(--primary_color);
+    font-size: 100px;
+    transition: .5s all;
+}
+#about-section .contact-logo span:hover{
+    background: var(--primary_color) ;
+    color: var(--light_primary_C);
+
+}
+/* about section end */
+/* contact section start */
+
+#contact-section h3,#contact-section p{
+    text-shadow: 2px 2px 5px var(--light_primary_C);
+    color: var(--primary_color);
+}
+#contact-section .contact-icon{
+    display: flex;
+    justify-content: center;
+}
+#contact-section .contact-icon i{
+    padding: 7px 9px;
+    border-radius: 5px;
+    background-color: var(--primary_color);
+    color: #F5F5F0;
+    transition: .5s all;
+}
+#contact-section .contact-icon i:hover{
+    background-color: var(--light_primary_C);
+    color: #F5F5F0;
+    cursor: pointer;
+}
+/* contact section end */
